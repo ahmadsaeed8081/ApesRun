@@ -156,21 +156,21 @@ const FAQ = () => {
     setAccordion(updatedAccordions);
   };
   return (
-    <div className=" tw-bg-[#E5B766]     tw-bg-no-repeat tw-w-full tw-bg-cover   tw-h-auto tw-py-20">
+    <div className=" tw-bg-[#0f0f0f]     tw-bg-no-repeat tw-w-full tw-bg-cover   tw-h-auto tw-py-20">
       <div className=" container">
         <div className="row tw-items-center">
           <div className="col-lg-6 col-md-12">
-            <h2 className="tw-text-[#FE0030] "> FAQS</h2>
-            <h1 className=" tw-font-medium tw-text-4xl sm:tw-text-start tw-text-center  tw-text-[#FE0030]">
+            <h2 className="tw-text-[#F0C238] "> FAQS</h2>
+            <h1 className=" tw-font-medium tw-text-4xl sm:tw-text-start tw-text-center  tw-text-[#F0C238]">
               Frenquently Questions
             </h1>
-            <div className="  tw-mt-12">
+            <div className=" tw-text-white tw-mt-12">
               {accordions.map((accordion) => (
                 <Accordion
                   key={accordion.key}
                   title={accordion.title}
                   data={
-                    <div>
+                    <div className=" tw-text-white">
                       {accordion.data}
                       <Link to={`${accordion.link}`}>{accordion.link}</Link>
                     </div>
@@ -181,13 +181,13 @@ const FAQ = () => {
               ))}
             </div>
           </div>
-          <div className="col-lg-6 col-md-12  md:tw-pt-32 tw-pt-0 tw-relative">
+          <div className="col-lg-6 col-md-12   md:tw-pt-32 tw-pt-0 tw-relative">
             <div className="row">
               <div className="col-md-12  tw-mx-auto">
                 <div className="row">
                   <div className="col-md-10 tw-mx-auto">
                     <img
-                      src={require("../../assets/images/hero.png")}
+                      src={require("../../assets/images/vision.png")}
                       className=" tw-w-full"
                     />
                   </div>

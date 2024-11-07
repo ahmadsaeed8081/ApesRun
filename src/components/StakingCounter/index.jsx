@@ -32,35 +32,35 @@ const StakingCounter = (props) => {
   return (
     <div className=" tw-pt-2.5 tw-flex  tw-gap-2  tw-justify-end">
     <div className=" tw-flex tw-gap-1">
-      <div className="  tw-gap-1   tw-w-7 tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#FE0030]">
+      <div className="  tw-gap-1   tw-w-7 tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#F0C238]">
         <p className=" tw-m-0 tw-text-sm tw-text-white">{String(timeLeft.days).padStart(2, '0')}</p>
       </div>
 
-      <p className=" tw-m-0 tw-text-sm tw-text-black">Days</p>
+      <p className=" tw-m-0 tw-text-sm tw-text-white">Days</p>
 
     </div>
     <div className=" tw-flex tw-gap-1">
-      <div className="  tw-gap-1   tw-w-6  tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#FE0030]">
+      <div className="  tw-gap-1   tw-w-6  tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#F0C238]">
         <p className=" tw-m-0 tw-text-white">{String(timeLeft.hours).padStart(2, '0')}</p>
       </div>
 
-      <p className=" tw-m-0 tw-text-sm tw-text-black">Hours</p>
+      <p className=" tw-m-0 tw-text-sm tw-text-white">Hours</p>
 
     </div>
     <div className=" tw-flex tw-gap-1">
-      <div className="  tw-gap-1   tw-w-6  tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#FE0030]">
+      <div className="  tw-gap-1   tw-w-6  tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#F0C238]">
         <p className=" text-white tw-m-0">{String(timeLeft.minutes).padStart(2, '0')}</p>
       </div>
 
-      <p className=" tw-m-0 tw-text-sm tw-text-black">Minutes</p>
+      <p className=" tw-m-0 tw-text-sm tw-text-white">Minutes</p>
 
     </div>
     <div className=" tw-flex tw-gap-1">
-      <div className="  tw-gap-1   tw-w-6  tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#FE0030]">
+      <div className="  tw-gap-1   tw-w-6  tw-justify-center  tw-rounded-sm tw-flex tw-items-center tw-bg-[#F0C238]">
         <p className=" tw-m-0 tw-text-white">   {String(timeLeft.seconds).padStart(2, '0')}</p>
       </div>
 
-      <p className=" tw-m-0 tw-text-sm tw-text-black">Second</p>
+      <p className=" tw-m-0 tw-text-sm tw-text-white">Second</p>
 
     </div>
    </div>

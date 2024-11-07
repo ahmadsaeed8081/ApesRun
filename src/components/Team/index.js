@@ -5,7 +5,7 @@ const Team = () => {
   return (
     <div
       id="teamSection"
-      className="  tw-bg-[#FE0030]"
+      className="  tw-bg-[#0f0f0f]"
     >
       <div className="container tw-py-16 tw-text-center">
        
@@ -61,7 +61,7 @@ const teamMembers = [
   {
     name: "Ty JavellanA, CPA",
     role: "Finance & Investment",
-    image: require("../../assets/images/about3.png"),
+    image: require("../../assets/images/nft1.png"),
     links: [
       { url: "", icon: "ic_sharp-discord.png", alt: "Discord" },
       { url: "", icon: "Symbol.png", alt: "Symbol" },
@@ -71,7 +71,7 @@ const teamMembers = [
   {
     name: "Jose Cliff Romos",
     role: "Strategy & Innovation",
-    image: require("../../assets/images/team1.png"),
+    image: require("../../assets/images/nft2.png"),
     links: [
       { url: "", icon: "ic_sharp-discord.png", alt: "Discord" },
       { url: "", icon: "Symbol.png", alt: "Symbol" },
@@ -81,7 +81,7 @@ const teamMembers = [
   {
     name: "Dr. Jesus Acantilado",
     role: "Founder | Medical Director",
-    image: require("../../assets/images/team2.png"),
+    image: require("../../assets/images/mission.png"),
     links: [
       { url: "", icon: "ic_sharp-discord.png", alt: "Discord" },
       { url: "", icon: "Symbol.png", alt: "Symbol" },

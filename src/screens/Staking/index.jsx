@@ -400,17 +400,17 @@ useEffect(()=>{
       title: "Stake",
       content: (
         <>
-          <div className="tw-border tw-border-[#FE0030] tw-rounded-md">
+          <div className="tw-border tw-border-[#F0C238] tw-rounded-md">
             <div className="tw-flex px-4 tw-py-2 tw-border-b tw-justify-between tw-items-center">
-            <img src={require("../../assets/images/logo.png")} width={70}/>
-              <p className="tw-m-0 tw-text-black tw-text-2xl tw-font-bold">
-                TikDogs
+            <img src={require("../../assets/images/logo1.png")} width={70}/>
+              <p className="tw-m-0 tw-text-white tw-text-2xl tw-font-bold">
+                ApesRun
               </p>
             </div>
 
             <div className="tw-flex p-4 tw-border-b tw-justify-between tw-items-center">
-              <p className="tw-m-0 tw-text-black tw-font-semibold">ROI:</p>
-              <p className="tw-m-0 tw-text-black">{selectedOption.APR} </p>
+              <p className="tw-m-0 tw-text-white tw-font-semibold">ROI:</p>
+              <p className="tw-m-0 tw-text-white">{selectedOption.APR} </p>
             </div>
 
             <div className="tw-flex-col tw-flex tw-justify-between tw-h-96 tw-p-6 tw-py-10">
@@ -420,13 +420,13 @@ useEffect(()=>{
                   className="tw-relative tw-w-full tw-inline-block"
                   ref={dropdownRef}
                 >
-                   <p className="tw-font-medium tw-text-black">
+                   <p className="tw-font-medium tw-text-white">
                       Choose Lockup Time:
                     </p>
 
                   <button
                     onClick={handleToggle}
-                    className="tw-border-[#FE0030] tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                    className="tw-border-[#F0C238] tw-flex tw-justify-between tw-border tw-w-full tw-text-white tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
                   >
                     <p className="tw-m-0">
                       {selectedOption.title || "Select an option"}
@@ -443,7 +443,7 @@ useEffect(()=>{
                         <li
                         key={item}
                         onClick={() => handleOptionClick(item)}
-                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-black hover:tw-bg-[#FE0030]"
+                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-black hover:tw-bg-[#F0C238]"
                         >
                           {item.title}
                         </li>
@@ -454,10 +454,10 @@ useEffect(()=>{
 
                 <div>
                   <div className="tw-flex tw-justify-between tw-items-center ">
-                    <p className="tw-font-medium tw-text-black">
+                    <p className="tw-font-medium tw-text-white">
                       Write Amount:
                     </p>
-                    <p className="tw-text-black tw-text-sm">Balance : {props.EBMBalance>0?(Number(props.EBMBalance)/10**18).toFixed(2):0}  Tiks</p>
+                    <p className="tw-text-white tw-text-sm">Balance : {props.EBMBalance>0?(Number(props.EBMBalance)/10**18).toFixed(2):0}  Tiks</p>
                   </div>
                   <div
                     className="tw-relative tw-w-full tw-inline-block"
@@ -465,13 +465,13 @@ useEffect(()=>{
                   >
                     <button
                       // onClick={handleToggle2}
-                      className="tw-border-[#FE0030] tw-flex tw-items-center tw-justify-between tw-border tw-w-full tw-text-black tw-py-3 tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                      className="tw-border-[#F0C238] tw-flex tw-items-center tw-justify-between tw-border tw-w-full tw-text-white tw-py-3 tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
                     >
                       {/* <p className="tw-m-0">
                         {selectedOption2 || "Select an option"}
                       </p> */}
-                      <input className=" tw-w-full tw-border-[#FE0030] tw-outline-none" 
-
+                      <input className=" tw-bg-[#0f0f0f] tw-w-full tw-border-[#F0C238] tw-outline-none" 
+                        type="number"
                         min={0}
                         value={stakeAmount}
                         max={props.EBMBalance>0?(Number(props.EBMBalance)/10**18):0}
@@ -480,7 +480,7 @@ useEffect(()=>{
                       />
                       <div className="tw-flex tw-items-center tw-gap-2">
                         <p className="tw-text-sm tw-m-0">Tiks</p>
-                        <button className=" text-white tw-bg-[#FE0030] tw-py-1.5 tw-px-1 tw-text-sm tw-rounded-md"
+                        <button className=" text-white tw-bg-[#F0C238] tw-py-1.5 tw-px-1 tw-text-sm tw-rounded-md"
                         onClick={(e)=>setStakedAmount(props.EBMBalance>0?(Number(props.EBMBalance)/10**18):0)}
 
                         >
@@ -517,22 +517,22 @@ useEffect(()=>{
       title: "Unstake",
       content:(
         <>
-        <div className="tw-border tw-border-[#FE0030] tw-rounded-md">
+        <div className="tw-border tw-border-[#F0C238] tw-rounded-md">
           <div className="tw-flex px-4 tw-py-2 tw-border-b tw-justify-between tw-items-center">
-          <img src={require("../../assets/images/logo.png")} width={70}/>
-            <p className="tw-m-0 tw-text-black tw-text-2xl tw-font-bold">
-              TikDogs
+          <img src={require("../../assets/images/logo1.png")} width={70}/>
+            <p className="tw-m-0 tw-text-white tw-text-2xl tw-font-bold">
+              ApesRun
             </p>
           </div>
 
           <div className="tw-flex p-4  tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-text-black tw-font-poppins tw-font-semibold">Penalty</p>
-            <p className="tw-m-0  tw-font-zen-dots tw-text-balck">10%</p>
+            <p className="tw-m-0 tw-text-white tw-font-poppins tw-font-semibold">Penalty</p>
+            <p className="tw-m-0  tw-font-zen-dots tw-text-white">10%</p>
           </div>
 
           <div className="tw-flex-col tw-flex tw-justify-between tw-h-96 tw-p-6 tw-py-10">
              <div>
-              <label className=" tw-text-black">Previous Investment</label>
+              <label className=" tw-text-white">Previous Investment</label>
            <div className=" tw-mt-2">
            <div
                   className="tw-relative tw-w-full tw-inline-block"
@@ -540,7 +540,7 @@ useEffect(()=>{
                 >
                   <button
                     onClick={handleToggle3}
-                    className="tw-border-[#FE0030] tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                    className="tw-border-[#F0C238] tw-flex tw-justify-between tw-border tw-w-full tw-text-white tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
                   >
                     <p className="tw-m-0">
                     {selectedOption3 ? Number(selectedOption3[0])/10**18:"Select an option"}
@@ -552,7 +552,7 @@ useEffect(()=>{
                     </p>
                   </button>
                   {isOpen3 && (
-                    <ul className="tw-absolute tw-p-0 tw-z-20 tw-bg-white tw-text-black tw-shadow-lg tw-rounded-md tw-mt-2 tw-w-full">
+                    <ul className="tw-absolute tw-p-0 tw-z-20 tw-bg-white tw-text-white tw-shadow-lg tw-rounded-md tw-mt-2 tw-w-full">
                     
                     {props.allInvestments?(
 
@@ -564,7 +564,7 @@ useEffect(()=>{
                           // set_choosed_Unstake_inv(Number(item[index][3]));
                         
                         }}
-                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-black hover:tw-bg-[#FE0030]"
+                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-white hover:tw-bg-[#F0C238]"
                         >
                           {Number(item[0])/10**18}
                         </li>
@@ -592,28 +592,28 @@ useEffect(()=>{
       title: "Reward",
       content:(
         <>
-        <div className="tw-border tw-border-[#FE0030] tw-rounded-md">
+        <div className="tw-border tw-border-[#F0C238] tw-rounded-md">
           <div className="tw-flex tw-mb-4 px-4 tw-py-2 tw-border-b tw-justify-between tw-items-center">
-            <img src={require("../../assets/images/logo.png")} width={70}/>
-            <p className="tw-m-0 tw-text-black tw-text-2xl tw-font-bold">
-            TikDogs
+            <img src={require("../../assets/images/logo1.png")} width={70}/>
+            <p className="tw-m-0 tw-text-white tw-text-2xl tw-font-bold">
+            ApesRun
             </p>
           </div>
 
           <div className="tw-flex px-4   tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black">Total Earning</p>
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black">{props.totalEarning? (Number(props.totalEarning)/10**18).toFixed(2) + (Number(props.totalwithdraw)/10**18).toFixed(2):0}</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">Total Earning</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">{props.totalEarning? (Number(props.totalEarning)/10**18).toFixed(2) + (Number(props.totalwithdraw)/10**18).toFixed(2):0}</p>
           </div>
 
 
           <div className="tw-flex px-4  tw-pt-1 tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black">Total Withdraw</p>
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black">{props.totalwithdraw? (Number(props.totalwithdraw)/10**18).toFixed(2):0}</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">Total Withdraw</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">{props.totalwithdraw? (Number(props.totalwithdraw)/10**18).toFixed(2):0}</p>
           </div>
 
           <div className="tw-flex-col  tw-flex tw-justify-between tw-h-96 tw-p-6 tw-py-10">
              <div>
-              <label className=" tw-text-black">Investment History</label>
+              <label className=" tw-text-white">Investment History</label>
            <div className=" tw-mt-2">
            <div
                   className="tw-relative tw-w-full tw-inline-block"
@@ -621,7 +621,7 @@ useEffect(()=>{
                 >
                   <button
                     onClick={handleToggle4}
-                    className="tw-border-[#FE0030] tw-flex tw-justify-between tw-border tw-w-full tw-text-black tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
+                    className="tw-border-[#F0C238] tw-flex tw-justify-between tw-border tw-w-full tw-text-white tw-py-5 tw-items-center tw-px-4 tw-rounded-md tw-text-[17.15px] tw-leading-3"
                   >
                     <p className="tw-m-0">
                     {selectedOption4 ? Number(selectedOption4[0])/10**18:"Select an option"}
@@ -639,7 +639,7 @@ useEffect(()=>{
                         <li
                           key={index}
                           onClick={() => handleOption4Click(item)}
-                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-black hover:tw-bg-[#FE0030]"
+                          className="tw-py-2 tw-px-4 tw-cursor-pointer tw-text-white hover:tw-bg-[#F0C238]"
                         >
                           {Number(item[0])/10**18}
 
@@ -653,12 +653,12 @@ useEffect(()=>{
                 </div>
            </div>
            <div className="tw-flex  tw-pt-7   tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black"> Earned Reward</p>
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black">{selectedOption4 ? (Number(selectedOption4[6])/10**18).toFixed(2):0}</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white"> Earned Reward</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">{selectedOption4 ? (Number(selectedOption4[6])/10**18).toFixed(2):0}</p>
           </div>
           <div className="tw-flex   tw-justify-between tw-items-center">
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black">Pending Reward</p>
-            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-black">{selectedOption4 ? (Number(selectedOption4[9])/10**18).toFixed(2):0}</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">Pending Reward</p>
+            <p className="tw-m-0 tw-font-poppins tw-text-sm tw-text-white">{selectedOption4 ? (Number(selectedOption4[9])/10**18).toFixed(2):0}</p>
           </div>
            
              </div>
@@ -673,7 +673,7 @@ useEffect(()=>{
   ];
 
   return (
-    <div className="tw-bg-center  tw-relative  tw-bg-cover tw-w-full tw-h-auto">
+    <div className="tw-bg-center tw-bg-[#0f0f0f]  tw-relative  tw-bg-cover tw-w-full tw-h-auto">
       <Header />
 
       <div className="container tw-py-24">

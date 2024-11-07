@@ -12,7 +12,7 @@ export default function Accordion(props) {
           onClick={props.toggleAccordion}
         >
          
-          <p className=" m-0 tw-text-black  tw-font-semibold sm:tw-text-lg  tw-text-[12px]">{props.title}</p>
+          <p className=" m-0 tw-text-white  tw-font-semibold sm:tw-text-lg  tw-text-[12px]">{props.title}</p>
           {/* <p
             className={` m-0 tw-transform ${
               props.isOpen ? "rotate-180" : "rotate-0"

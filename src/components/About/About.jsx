@@ -12,7 +12,7 @@ const About = () => {
 
 
   return (
-    <div  id='aboutSection'  className='  tw-relative tw-py-20  tw-w-full tw-h-auto'>
+    <div  id='aboutSection'  className=' tw-bg-[#0F0F0F] tw-relative tw-py-20  tw-w-full tw-h-auto'>
           
       <div className='container'>
         <div className='row  sm:tw-text-start  tw-text-center g-5 tw-items-center'>
@@ -23,12 +23,12 @@ const About = () => {
             About us
           
             </h1>
-            <p className=" tw-text-black  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
+            <p className=" tw-text-white  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
             At APESRUN, we revolutionize gaming by turning clicks into cash. Inspired by successful projects, we created a platform where players earn “APES” with every interaction. Committed to community and transparency, we empower gamers to thrive financially while enjoying an engaging experience. Join us and redefine how you play!
 
 </p>
         
-           
+{/*            
             <div className=' tw-flex tw-flex-wrap    sm:tw-justify-start tw-justify-center tw-w-full sm:tw-gap-6 tw-gap-3 tw-items-center'>
                 <div className=' tw-text-center '>
                     <h1 className=' tw-font-zen-dots   sm:tw-text-3xl tw-text-[18px] tw-text-[#F0C238]'>10M+</h1>
@@ -49,7 +49,7 @@ const About = () => {
                     <p className=' sm:tw-text-[14px] tw-text-[9px] tw-text-[#F0C238] tw-font-medium'>Number of Media Mention</p>
                 </div>
               
-            </div>
+            </div> */}
             <Button
                    onClick={()=>openPdfInNewTab()}
                 rIcons={<FaArrowRight color="#fff" />}
@@ -66,7 +66,7 @@ const About = () => {
               <div className='row'>
                 <div className="col-md-12 tw-mx-auto">
                    <div className=' tw-relative '> 
-                    <img src={require('../../assets/images/about1.png')}   className=' tw-w-full' alt='' />
+                    <img src={require('../../assets/images/about.png')}   className=' tw-w-full' alt='' />
                     
                    
                    </div>
@@ -89,7 +89,7 @@ const About = () => {
             Our Vision
           
             </h1>
-            <p className=" tw-text-black  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
+            <p className=" tw-text-white  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
             At APESRUN, we envision a dynamic gaming platform where every click leads to financial opportunity and community engagement. We aim to create a trusted environment that empowers players to maximize their earnings while enjoying an entertaining experience, shaping a future where gaming and wealth creation go hand in hand.
 
 </p>
@@ -109,7 +109,7 @@ const About = () => {
             Our Mission
           
             </h1>
-            <p className=" tw-text-black  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
+            <p className=" tw-text-white  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
             At APESRUN, our mission is to empower gamers to achieve financial success while enjoying a fun and engaging gaming experience. By allowing players to earn “APES” with every click—redeemable for cash—we create opportunities for gamers to build wealth and thrive, fostering a rewarding future for our vibrant community.
 
 

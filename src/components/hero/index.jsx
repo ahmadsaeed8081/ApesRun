@@ -345,7 +345,7 @@ const Hero = (props) => {
       <div  className="container  tw-relative tw-pt-6 tw-pb-28">
         <div className="row    g-5 tw-items-center">
           <div className="col-lg-6 col-md-12 tw-pt-10 tw-pl-5 ">
-            <h1 className=" tw-text-[#F0C238]  tw-font-zen-dots  md:tw-text-4xl tw-text-3xl tw-pl-5">
+            <h1 className=" tw-text-[#F0C238]   tw-font-zen-dots  md:tw-text-4xl tw-text-3xl tw-pl-5">
             
             APES RUN: The Game-Changing Adventure
              
@@ -369,7 +369,7 @@ const Hero = (props) => {
                  <button
                  onClick={() => setOpenVideo(false)}
                  
-                 className={"  tw-bg-white tw-px-5  tw-gap-2 tw-rounded-md  tw-border-[#F0C238] tw-flex tw-items-center  tw-text-[#F0C238] tw-border tw-mt-7"}
+                 className={"  tw-bg-white tw-px-5  tw-gap-2 tw-rounded-md  tw-border-black tw-flex tw-items-center  tw-text-black tw-border tw-mt-7"}
                  
                >
  Go back <FaArrowRight color="#F0C238" />
@@ -378,7 +378,7 @@ const Hero = (props) => {
                  <button
                 onClick={() => setOpenVideo(true)}
                 
-                className={"  tw-bg-white tw-px-5  tw-gap-2 tw-rounded-md  tw-border-[#F0C238] tw-flex tw-items-center  tw-text-[#F0C238] tw-border tw-mt-7"}
+                className={"  tw-bg-white tw-px-5  tw-gap-2 tw-rounded-md  tw-border-black tw-flex tw-items-center  tw-text-black tw-border tw-mt-7"}
                 
               >
 Get Tiks <FaArrowRight color="#F0C238" />
@@ -774,7 +774,7 @@ Get Tiks <FaArrowRight color="#F0C238" />
                 </div>
               </div>
             ) : (
-              <img  width={530} src={require("../../assets/images/logo1.png")} />
+              <img  width={550} src={require("../../assets/images/hero.png")} />
               // <VideoSlider/>
             )}
           </div>
