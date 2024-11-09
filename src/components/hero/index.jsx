@@ -381,7 +381,7 @@ const Hero = (props) => {
                 className={"  tw-bg-white tw-px-5  tw-gap-2 tw-rounded-md  tw-border-black tw-flex tw-items-center  tw-text-black tw-border tw-mt-7"}
                 
               >
-Get Tiks <FaArrowRight color="#F0C238" />
+Get APS <FaArrowRight color="#F0C238" />
               </button>
               )}
              
