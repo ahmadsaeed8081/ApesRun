@@ -50,7 +50,7 @@ const Hero = (props) => {
     setIsModalOpen(false);
   };
   const chainId = process.env.REACT_APP_ENV == "production" ? polygon.id : polygonAmoy.id;
-  const [selectedCurrency, setSelectedCurrency] = useState("DAI");
+  const [selectedCurrency, setSelectedCurrency] = useState("USDT");
 
   
   const link_notify = () => toast("Referral Link Copied!");
@@ -92,7 +92,7 @@ const Hero = (props) => {
   const getBorderColor = (currency) => {
     return selectedCurrency === currency
       ? "tw-border-[#00F0FF] tw-border-2"
-      : "tw-border-[#456DA7]";
+      : "tw-border-[#F0C238]";
   };
 
 
@@ -149,8 +149,8 @@ const Hero = (props) => {
           abi: presale_abi,
           address: presale_address,
           functionName: "buy_token", 
-          args: [Convert_To_Wei(payAmount? Number(payAmount) : 0),ref_add, selectedCurrency=="MATIC" ? "0" : "1" ],
-          value: selectedCurrency=="MATIC"? Convert_To_Wei(payAmount ? Number(payAmount) : "0") : 0,
+          args: [Convert_To_Wei(payAmount? Number(payAmount) : 0),ref_add, selectedCurrency=="POL" ? "0" : "1" ],
+          value: selectedCurrency=="POL"? Convert_To_Wei(payAmount ? Number(payAmount) : "0") : 0,
 
         });
 
@@ -210,7 +210,7 @@ const Hero = (props) => {
     }
 
     let price;
-    if (selectedCurrency=="DAI" || selectedCurrency=="USDC") {
+    if (selectedCurrency=="USDT" || selectedCurrency=="USDC") {
       price = Number(props.curr_presale.price) / 10 ** 18;
     } else {
       price = Number(props.perTokenIn_Matic) / 10 ** 18;
@@ -231,7 +231,7 @@ const Hero = (props) => {
       return;
     }
     let price;
-    if (selectedCurrency=="DAI" || selectedCurrency=="USDC") {
+    if (selectedCurrency=="USDT" || selectedCurrency=="USDC") {
       price = Number(props.curr_presale.price) / 10 ** 18;
     } else {    
       price = Number(props.perTokenIn_Matic) / 10 ** 18;
@@ -257,16 +257,16 @@ const Hero = (props) => {
       return;
     }
 
-    if (selectedCurrency=="MATIC" ) 
+    if (selectedCurrency=="POL" ) 
     {
 
       if (Number(props.MATICBalance) < Number(Convert_To_Wei(payAmount))) {
-        alert("You don't have enough Matic");
+        alert("You don't have enough Pol");
         return;
       }
 
       if (Number(props.minPurchase_matic)/10**18 > Number(payAmount)) {
-        alert("Minimum purchase is "+ (Number(props.minPurchase_matic)/10**18).toFixed(1)  +" MATIC");
+        alert("Minimum purchase is "+ (Number(props.minPurchase_matic)/10**18).toFixed(1)  +" Pol");
         return;
       }
 
@@ -280,7 +280,7 @@ const Hero = (props) => {
         await buytoken1?.();
       }
     } 
-    else if(selectedCurrency=="DAI" )
+    else if(selectedCurrency=="USDT" )
     {
       if (Number(props.USDTBalance) < Number(payAmount) * 10 ** 18) {
         alert("You don't have enough USDT");
@@ -425,7 +425,7 @@ Get APS <FaArrowRight color="#F0C238" />
 
                       <div className=" tw-flex tw-justify-between tw-items-center">
                         <p className=" tw-m-0  sm:tw-text-base tw-text-[10px]  tw-font-poppins  tw-font-medium tw-text-white">
-                        1 Tiks = ${props.curr_presale.price
+                        1 APS = ${props.curr_presale.price
                         ? (Convert_To_eth(props.curr_presale.price) )
                         : ""}                        </p>
                         <p className=" tw-m-0 sm:tw-text-base tw-text-[10px] tw-font-poppins  tw-font-medium  tw-text-white">
@@ -453,7 +453,7 @@ Get APS <FaArrowRight color="#F0C238" />
 
                     <div className="  tw-text-center tw-pb-4 tw-pt-0">
                       <p className=" tw-font-poppins sm:tw-text-base tw-text-[10px] tw-m-0 tw-text-white">
-                      Your Purchased Tiks = {Number(props.EBMBalance)
+                      Your Purchased APS = {Number(props.EBMBalance)
                           ? (Number(props.EBMBalance) / 10 ** 18).toFixed(2)
                           : ""}                        </p>
                      
@@ -461,37 +461,37 @@ Get APS <FaArrowRight color="#F0C238" />
 
                     <div className="tw-flex tw-w-full tw-gap-3">
                       <div
-                        className={`tw-rounded-md  tw-w-full tw-h-[48px]  tw-justify-between tw-pr-5 tw-flex tw-items-center tw-mt-2 ${selectedCurrency==="MATIC"?' tw-border-2 tw-border-[#456DA7]': 'tw-border-2 border'}`}
-                        onClick={() => handleSelect("MATIC")}
+                        className={`tw-rounded-md  tw-w-full tw-h-[48px]  tw-justify-between tw-pr-5 tw-flex tw-items-center tw-mt-2 ${selectedCurrency==="POL"?' tw-border-2 tw-border-[#F0C238]': 'tw-border-2 border'}`}
+                        onClick={() => handleSelect("POL")}
                       >
                         <div>
                           <img
                             src={require("../../assets/images/c2.png")}
-                            alt="MATIC"
+                            alt="POL"
                           />
                         </div>
-                        <p className="tw-m-0 tw-text-white">MATIC</p>
+                        <p className="tw-m-0 tw-text-white">POL</p>
                       </div>
                       <div
-                        className={`tw-rounded-md  tw-w-full tw-h-[48px]  tw-justify-between tw-pr-5 tw-flex tw-items-center tw-mt-2 ${selectedCurrency==="DAI"?' tw-border-2 tw-border-[#F0C238]': 'tw-border-2 border'}`}
-                        onClick={() => handleSelect("DAI")}
+                        className={`tw-rounded-md  tw-w-full tw-h-[48px]  tw-justify-between tw-pr-5 tw-flex tw-items-center tw-mt-2 ${selectedCurrency==="USDT"?' tw-border-2 tw-border-[#F0C238]': 'tw-border-2 border'}`}
+                        onClick={() => handleSelect("USDT")}
                       >
                         <div>
                           <img 
-                            src={require("../../assets/images/Dailogo.png")}
-                            alt="DAI"
+                            src={require("../../assets/images/usdt.png")}
+                            alt="USDT"
                             height={"20px"}
                             width={"30px"}
                           />
                         </div>
-                        <p className="tw-m-0 tw-text-white">DAI</p>
+                        <p className="tw-m-0 tw-text-white">USDT</p>
                       </div>
                     
                     </div>
                     <div className="  tw-gap-3 tw-justify-center  tw-flex tw-items-center tw-text-center tw-pt-4 tw-pb-2">
                       <p className=" tw-w-24 m-0  tw-bg-[#F0C238] tw-h-[2px] "></p>
                       <p className=" tw-uppercase tw-font-medium tw-font-poppins tw-m-0  sm:tw-text-lg tw-text-[10px] tw-text-white">
-                      {selectedCurrency==="MATIC"?'Matic' :'DAI'} Balance = <span className=" tw-text-[#F0C238] tw-font-poppins">{selectedCurrency==="MATIC"? props.MATICBalance ? (Number(props.MATICBalance)/10**18).toFixed(3):"0" : props.USDTBalance ? (Number(props.USDTBalance)/10**18).toFixed(2):"0" }</span>
+                      {selectedCurrency==="POL"?'POL' :'USDT'} Balance = <span className=" tw-text-[#F0C238] tw-font-poppins">{selectedCurrency==="POL"? props.MATICBalance ? (Number(props.MATICBalance)/10**18).toFixed(3):"0" : props.USDTBalance ? (Number(props.USDTBalance)/10**18).toFixed(2):"0" }</span>
                       </p>
                       <p className=" tw-w-24 m-0  tw-bg-[#F0C238] tw-h-[2px] "></p>
 
@@ -516,9 +516,9 @@ Get APS <FaArrowRight color="#F0C238" />
                             
                             />
                           <div className=" tw-absolute tw-left-1.5  tw-top-0">
-                            {selectedCurrency === "DAI" ? (
+                            {selectedCurrency === "USDT" ? (
                               <img
-                                src={require("../../assets/images/Dailogo.png")}
+                                src={require("../../assets/images/usdt.png")}
                                 className=" tw-w-6 tw-h-8 tw-pt-2"
                               />
                             ) :(
@@ -533,7 +533,7 @@ Get APS <FaArrowRight color="#F0C238" />
 
                       <div className=" tw-w-full">
                         <p className="  tw-font-poppins tw-m-0 tw-text-white sm:tw-text-base tw-text-[10px]">
-                        Samaritan Receive
+                        APS Receive
                         </p>
 
                         <div className=" tw-rounded-md tw-border  tw-border-[#F0C238] tw-relative  tw-mt-2  tw-bg-gradient">
@@ -551,7 +551,7 @@ Get APS <FaArrowRight color="#F0C238" />
                             />
                           <div className=" tw-absolute tw-left-3  tw-top-2">
                             <img
-                              src={require("../../assets/images/c5.png")}
+                              src={require("../../assets/images/logo1.png")}
                               className=" tw-w-6"
                             />
                           </div>
@@ -595,7 +595,7 @@ Get APS <FaArrowRight color="#F0C238" />
 
                     <div className="tw-pt-6 tw-flex tw-justify-center">
       <p
-        className="tw-flex tw-gap-3 tw-items-center tw-text-md tw-font-poppins tw-font-semibold cursor-pointer"
+        className="tw-flex tw-gap-3 tw-items-center tw-text-white tw-text-md tw-font-poppins tw-font-semibold cursor-pointer"
         onClick={handleToggle}
       >
         REFERRAL DETAILS {isExpanded ? <FaAngleUp/> : <FaAngleDown />}
@@ -607,29 +607,29 @@ Get APS <FaArrowRight color="#F0C238" />
     {isExpanded && (
         <div className=" tw-overflow-x-auto " >
           <table className="tw-min-w-full tw-mb-0">
-          <thead className="tw-border-t tw-border-b tw-border-[#456DA7] tw-bg-primary">
+          <thead className="tw-border-t tw-border-b tw-border-[#F0C238] tw-bg-primary">
             <tr className="tw-rounded-lg tw-whitespace-nowrap">
               <th
                 scope="col"
-                className="tw-text-sm tw-text-[#456DA7] tw-font-bold tw-px-6 tw-py-4"
+                className="tw-text-sm tw-text-[#F0C238] tw-font-bold tw-px-6 tw-py-4"
               >
                 LEVEL
               </th>
               <th
                 scope="col"
-                className="tw-text-sm tw-text-[#456DA7] tw-font-bold tw-px-6 tw-py-4"
+                className="tw-text-sm tw-text-[#F0C238] tw-font-bold tw-px-6 tw-py-4"
               >
                 PERCENTAGE
               </th>
               <th
                 scope="col"
-                className="tw-text-sm tw-text-[#456DA7] tw-font-bold tw-px-6 tw-py-4"
+                className="tw-text-sm tw-text-[#F0C238] tw-font-bold tw-px-6 tw-py-4"
               >
                 Team
               </th>
               <th
                 scope="col"
-                className="tw-text-sm tw-text-[#456DA7] tw-font-bold tw-px-6 tw-py-4"
+                className="tw-text-sm tw-text-[#F0C238] tw-font-bold tw-px-6 tw-py-4"
               >
                 EARNING
               </th>
@@ -654,7 +654,7 @@ Get APS <FaArrowRight color="#F0C238" />
                   </span>
                 </td>
                 <td     onClick={()=>openModal(1)}  className="align-middle  cursor-pointer text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <button style={{ color:"#269FF0" }}  className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  <button style={{ color:"#F0C238" }}  className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
                   {!isDisconnected? props.refEarning ? (Number(props.refEarning[0])/10**18).toFixed(2) : 0 : 0}
                    
                   </button>
@@ -678,7 +678,7 @@ Get APS <FaArrowRight color="#F0C238" />
                   </span>
                 </td>
                 <td onClick={()=>openModal(2)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <button style={{ color:"#269FF0" }} className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  <button style={{ color:"#F0C238" }} className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
                   {!isDisconnected?props.refEarning ? (Number(props.refEarning[1])/10**18).toFixed(2): 0 :0 }
 
                   </button>
@@ -702,66 +702,13 @@ Get APS <FaArrowRight color="#F0C238" />
                   </span>
                 </td>
                 <td     onClick={()=>openModal(3)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <button style={{ color:"#269FF0" }} className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
+                  <button style={{ color:"#F0C238" }} className="text-base  py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
                   {!isDisconnected? props.refEarning ? (Number(props.refEarning[2])/10**18).toFixed(2): 0:0 }
 
                   </button>
                 </td>
               </tr>
 
-            {props.isCso?
-              <tr className="bg-white border-t rounded-md">
-                <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
-                    CSO
-                  </span>
-                </td>
-                <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
-                    2%
-                  </span>
-                </td>
-                <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
-
-                  </span>
-                </td>
-                <td     onClick={()=>openModal(4)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <button className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
-                  {props.Cso_Earning ? (Number(props.Cso_Earning)/10**18).toFixed(2): 0 }
-
-                  </button>
-                </td>
-              </tr>
-:null
-            }
-
-{props.isEmb?
-              <tr className="bg-white border-t rounded-md">
-                <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
-                    EMB
-                  </span>
-                </td>
-                <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
-                    1%
-                  </span>
-                </td>
-                <td className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <span className="text-base text-black tw-font-poppins py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline bg-green-200 rounded-full">
-
-                  </span>
-                </td>
-                <td onClick={()=>openModal(5)} className="align-middle text-sm font-normal px-6 py-2 whitespace-nowrap text-center">
-                  <button className="text-base text-black py-1 px-2.5 leading-none text-center whitespace-nowrap align-baseline tw-font-poppins bg-green-200 rounded-full">
-                  {props.Emb_Earning ? (Number(props.Emb_Earning)/10**18).toFixed(2): 0 }
-                    
-                  </button>
-                </td>
-              </tr>
-:null
-}
 
             </>
           </tbody>
@@ -774,7 +721,7 @@ Get APS <FaArrowRight color="#F0C238" />
                 </div>
               </div>
             ) : (
-              <img  width={550} src={require("../../assets/images/hero.png")} />
+              <img  width={550} src={require("../../assets/images/ape1.png")} />
               // <VideoSlider/>
             )}
           </div>

@@ -66,7 +66,7 @@ const About = () => {
               <div className='row'>
                 <div className="col-md-12 tw-mx-auto">
                    <div className=' tw-relative '> 
-                    <img src={require('../../assets/images/about.png')}   className=' tw-w-full' alt='' />
+                    <img src={require('../../assets/images/ape2.png')}   className=' tw-w-full' alt='' />
                     
                    
                    </div>
@@ -77,7 +77,7 @@ const About = () => {
             <div className='col-lg-6 col-md-12'>
               <div className='row'>
                 <div className="col-md-10 tw-mx-auto">
-                  <img src={require('../../assets/images/vision1.png')} alt='' />
+                  <img src={require('../../assets/images/ape6.png')} alt='' />
                 </div>
               </div>
             </div>
@@ -121,7 +121,7 @@ const About = () => {
             <div className='col-lg-6 col-md-12'>
               <div className='row'>
                 <div className="col-md-10 tw-mx-auto">
-                  <img src={require('../../assets/images/mission1.png')} alt='' />
+                  <img src={require('../../assets/images/ape4.png')} alt='' />
                 </div>
               </div>
             </div>
