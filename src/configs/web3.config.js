@@ -7,10 +7,10 @@ import { createClient } from 'viem'
 
 const projectId = process.env.REACT_APP_WC_PROJECT_ID;
 const metadata = {  
-    name: "YouSamaritan",
+    name: "Apesrun",
     description: "",
-    url: "https://yousamaritan.com/",
-    icons: ["https://yousamaritan.com/"]
+    url: "https://Apesrun.com/",
+    icons: ["https://Apesrun.com/"]
     
 };
 
