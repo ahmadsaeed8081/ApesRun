@@ -20,11 +20,22 @@ const Team = () => {
                   
                   <div className="row">
                   <div className=" col-md-9 tw-mx-auto">
-                  <img
+                    {member.name=="Dr. Jesus Acantilado"?(
+                      <img
+                      width={180}
                       src={member.image}
                       className=" tw-mx-auto"
                       alt={member.name}
                     />
+                    ):(
+                      <img
+                      width={260}
+                      src={member.image}
+                      className=" tw-mx-auto"
+                      alt={member.name}
+                    />
+                    )}
+                  
                   </div>
                   </div>
                 </div>
@@ -58,10 +69,22 @@ const Team = () => {
 };
 
 const teamMembers = [
+
+
+  {
+    name: "Dr. Jesus Acantilado",
+    role: "Founder | Medical Director",
+    image: require("../../assets/images/nft13.PNG"),
+    links: [
+      { url: "", icon: "ic_sharp-discord.png", alt: "Discord" },
+      { url: "", icon: "Symbol.png", alt: "Symbol" },
+      { url: "", icon: "iconoir_telegram.png", alt: "Telegram" },
+    ],
+  },
   {
     name: "Ty JavellanA, CPA",
     role: "Finance & Investment",
-    image: require("../../assets/images/nft1.png"),
+    image: require("../../assets/images/nft.PNG"),
     links: [
       { url: "", icon: "ic_sharp-discord.png", alt: "Discord" },
       { url: "", icon: "Symbol.png", alt: "Symbol" },
@@ -71,17 +94,7 @@ const teamMembers = [
   {
     name: "Jose Cliff Romos",
     role: "Strategy & Innovation",
-    image: require("../../assets/images/nft2.png"),
-    links: [
-      { url: "", icon: "ic_sharp-discord.png", alt: "Discord" },
-      { url: "", icon: "Symbol.png", alt: "Symbol" },
-      { url: "", icon: "iconoir_telegram.png", alt: "Telegram" },
-    ],
-  },
-  {
-    name: "Dr. Jesus Acantilado",
-    role: "Founder | Medical Director",
-    image: require("../../assets/images/mission.png"),
+    image: require("../../assets/images/nft11.PNG"),
     links: [
       { url: "", icon: "ic_sharp-discord.png", alt: "Discord" },
       { url: "", icon: "Symbol.png", alt: "Symbol" },

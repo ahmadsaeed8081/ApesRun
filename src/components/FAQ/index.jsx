@@ -129,8 +129,9 @@ const FAQ = () => {
                 <div className="row">
                   <div className="col-md-10 tw-mx-auto">
                     <img
-                      src={require("../../assets/images/ape5.png")}
-                      className=" tw-w-full"
+                    width={500}
+                      src={require("../../assets/images/faq.PNG")}
+                      className=" "
                     />
                   </div>
                 </div>

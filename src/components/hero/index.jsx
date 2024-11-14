@@ -347,11 +347,11 @@ const Hero = (props) => {
           <div className="col-lg-6 col-md-12 tw-pt-10 tw-pl-5 ">
             <h1 className=" tw-text-[#F0C238]   tw-font-zen-dots  md:tw-text-4xl tw-text-3xl tw-pl-5">
             
-            APES RUN: The Game-Changing Adventure
+            Shake to Earn Crypto with Apes Run!
              
             </h1>
             <p className=" tw-text-white sm:tw-text-start tw-text-center  tw-font-normal tw-leading-7 tw-pt-4 tw-text-lg t tw-pl-5">
-            In APES RUN, players click to collect adorable virtual apes and earn real cash with every click. With each APES token collected, Alex transforms from a casual gamer into a potential millionaire. As success stories spread, the game revolutionizes gaming, proving anyone with an internet connection can thrive!
+            Get ready to turn your phone into a fun, rewarding machine with Apes Run! Our unique "Shake to Earn" model combines physical activity with a gamified experience, letting you earn tokens by simply shaking your phone. No app downloads or complex setups—just join our bot on Telegram and start shaking!
 
 
 </p>
@@ -721,7 +721,7 @@ Get APS <FaArrowRight color="#F0C238" />
                 </div>
               </div>
             ) : (
-              <img  width={550} src={require("../../assets/images/hero1.png")} />
+              <img  width={550} src={require("../../assets/images/hero1.PNG")} />
               // <VideoSlider/>
             )}
           </div>

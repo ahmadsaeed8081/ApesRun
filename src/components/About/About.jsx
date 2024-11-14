@@ -20,12 +20,23 @@ const About = () => {
               <span className=' tw-text-[#F0C238] tw-font-semibold tw-text-[18px] sm:tw-justify-start tw-justify-center tw-flex tw-items-center tw-gap-4'>  <p className='  sm:tw-block tw-hidden m-0 tw-w-16 tw-h-1 tw-bg-[#456DA7]'></p> Everyone encounters difficulties</span>
             <h1 className=" tw-text-[#F0C238]  tw-font-zen-dots  md:tw-text-[45px] tw-text-[28px]">
             
-            About us
+            Why Apes Run?
           
             </h1>
             <p className=" tw-text-white  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
-            At APESRUN, we revolutionize gaming by turning clicks into cash. Inspired by successful projects, we created a platform where players earn “APES” with every interaction. Committed to community and transparency, we empower gamers to thrive financially while enjoying an engaging experience. Join us and redefine how you play!
+            1.⁠ Fun and Engaging:* Say goodbye to boring earn models. With Apes Run, every shake brings you closer to exciting rewards.
+   <br></br> <br></br>
+   2. Instant Gratification:* Earn points or tokens in real-time and redeem them for real-world rewards or trade them within our ecosystem.
+   <br></br> <br></br>
 
+   3.⁠Easy Access:* All you need is a smartphone and a Telegram account. Join the bot and start earning without any hassle.
+   <br></br> <br></br>
+
+   4.⁠ Community and Competition:* Engage in daily challenges, climb leaderboards, and share your progress with friends.
+   <br></br> <br></br>
+
+   5.⁠ Secure and Fair:* Advanced motion-sensing technology ensures accurate tracking, fair rewards, and a level playing field for everyone.
+   
 </p>
         
 {/*            
@@ -66,7 +77,7 @@ const About = () => {
               <div className='row'>
                 <div className="col-md-12 tw-mx-auto">
                    <div className=' tw-relative '> 
-                    <img src={require('../../assets/images/ape2.png')}   className=' tw-w-full' alt='' />
+                    <img src={require('../../assets/images/about1.png')}   className=' tw-w-full' alt='' />
                     
                    
                    </div>
@@ -77,7 +88,7 @@ const About = () => {
             <div className='col-lg-6 col-md-12'>
               <div className='row'>
                 <div className="col-md-10 tw-mx-auto">
-                  <img src={require('../../assets/images/ape6.png')} alt='' />
+                  <img src={require('../../assets/images/vision2.PNG')} width={380} alt='' />
                 </div>
               </div>
             </div>
@@ -90,7 +101,7 @@ const About = () => {
           
             </h1>
             <p className=" tw-text-white  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
-            At APESRUN, we envision a dynamic gaming platform where every click leads to financial opportunity and community engagement. We aim to create a trusted environment that empowers players to maximize their earnings while enjoying an entertaining experience, shaping a future where gaming and wealth creation go hand in hand.
+            At APESRUN, we envision a dynamic gaming platform where every shake leads to financial opportunity and community engagement. We aim to create a trusted environment that empowers players to maximize their earnings while enjoying an entertaining experience, shaping a future where gaming and wealth creation go hand in hand.
 
 </p>
         
@@ -110,7 +121,7 @@ const About = () => {
           
             </h1>
             <p className=" tw-text-white  sm:tw-text-start tw-text-center  tw-leading-8 tw-pt-4 tw-text-xl">
-            At APESRUN, our mission is to empower gamers to achieve financial success while enjoying a fun and engaging gaming experience. By allowing players to earn “APES” with every click—redeemable for cash—we create opportunities for gamers to build wealth and thrive, fostering a rewarding future for our vibrant community.
+            At APESRUN, our mission is to empower gamers to achieve financial success while enjoying a fun and engaging gaming experience. By allowing players to earn “APS” with every click—redeemable for cash—we create opportunities for gamers to build wealth and thrive, fostering a rewarding future for our vibrant community.
 
 
  </p>
@@ -121,7 +132,7 @@ const About = () => {
             <div className='col-lg-6 col-md-12'>
               <div className='row'>
                 <div className="col-md-10 tw-mx-auto">
-                  <img src={require('../../assets/images/ape4.png')} alt='' />
+                  <img src={require('../../assets/images/mission2.PNG')} alt='' />
                 </div>
               </div>
             </div>
