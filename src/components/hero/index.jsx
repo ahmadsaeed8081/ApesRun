@@ -3,7 +3,7 @@ import Button from "../Button";
 import { FaAngleDown, FaArrowRight } from "react-icons/fa6";
 import Header from "../header";
 import Counter from "../Counter";
-import VideoPlayer from "../videoPlayer";
+// import VideoPlayer from "../videoPlayer";
 import { FaAngleUp } from "react-icons/fa";
 import { PiCopyLight } from "react-icons/pi";
 import VideoSlider from "../videoSlider";

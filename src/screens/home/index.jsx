@@ -7,6 +7,8 @@ import FAQ from '../../components/FAQ';
 import Tokenomics from '../../components/tokenomics';
 import RoadMap from '../../components/RoadMap';
 import About from '../../components/About/About';
+import HowToBuy from '../../components/HowToBuy';
+
 const Home = (props) => {
   return (
     <div className=' tw-overflow-x-hidden'>
@@ -19,6 +21,8 @@ const Home = (props) => {
       <Tokenomics/>
       <RoadMap/>
       <Team/>
+      <HowToBuy/>
+
       <FAQ/>
       <Footer/>
     </div>

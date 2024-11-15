@@ -44,21 +44,20 @@ const VideoSlider = () => {
 
   const brands = [
     "video1.mp4",
-    "video2.mp4",
-    "video3.mp4",
+
 
   ];
 
   return (
     <div className="tw-flex tw-items-center">
       <div className="container tw-mx-auto tw-relative">
-        <Slider {...settings}>
-          {brands.map((brand, index) => (
-            <div key={index} className="tw-text-center tw-rounded-md tw-overflow-hidden">
-              <VideoPlayer src={require(`../../assets/images/${brand}`)} className="tw-rounded-md tw-mx-auto" />
+        {/* <Slider {...settings}> */}
+          {/* {brands.map((brand, index) => ( */}
+            <div className="tw-text-center tw-rounded-md tw-overflow-hidden">
+              <VideoPlayer src={require(`../../assets/images/video1.mp4`)} className="tw-rounded-md tw-mx-auto" />
             </div>
-          ))}
-        </Slider>
+          {/* ))} */}
+        {/* </Slider> */}
       </div>
     </div>
   );
