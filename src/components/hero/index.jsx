@@ -631,7 +631,7 @@ Get APS <FaArrowRight color="#F0C238" />
                 scope="col"
                 className="tw-text-sm tw-text-[#F0C238] tw-font-bold tw-px-6 tw-py-4"
               >
-                EARNING
+                EARNINGS
               </th>
             </tr>
           </thead>
