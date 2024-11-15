@@ -721,7 +721,7 @@ Get APS <FaArrowRight color="#F0C238" />
                 </div>
               </div>
             ) : (
-              <img  width={550} src={require("../../assets/images/hero1.PNG")} />
+              <img  width={550} src={require("../../assets/images/hero1.png")} />
               // <VideoSlider/>
             )}
           </div>
