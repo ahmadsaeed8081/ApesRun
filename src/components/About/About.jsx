@@ -1,6 +1,8 @@
 import React from 'react'
 import Button from '../Button'
 import { FaArrowRight } from 'react-icons/fa6'
+import VideoSlider from "../videoSlider";
+
 // import EBM_Avenue from '../EBM_avenue'
 const About = () => {
 
@@ -77,8 +79,9 @@ const About = () => {
               <div className='row'>
                 <div className="col-md-12 tw-mx-auto">
                    <div className=' tw-relative '> 
-                    <img src={require('../../assets/images/about1.png')}   className=' tw-w-full' alt='' />
-                    
+                    {/* <img src={require('../../assets/images/about1.png')}   className=' tw-w-full' alt='' /> */}
+                    <VideoSlider src1={"./video2.mp4"} />
+
                    
                    </div>
                 </div>

@@ -125,11 +125,11 @@ const Header = () => {
         
           <li>
             <Link
-              to={"/"}
-              onClick={() => handleNavigate("/", "teamSection")}
+              to={"https://mlm.apesrun.com/"}
+              target="_blank"
               className="tw-text-white"
             >
-              Team
+              MLM
             </Link>
           </li>
         </ul>
@@ -225,19 +225,15 @@ const Header = () => {
             </Link>
           </li>
           
-            <li>
-              <Link
-                to={"/"}
-                onClick={() => {
-                  handleNavigate("/", "teamSection");
-
-                  setOpen(false);
-                }}
-                className="tw-text-white"
-              >
-                Team
-              </Link>
-            </li>
+          <li>
+            <Link
+              to={"https://mlm.apesrun.com/"}
+              target="_blank"
+              className="tw-text-white"
+            >
+              MLM
+            </Link>
+          </li>
 
             <li className=" tw-pt-5">
             <Button  

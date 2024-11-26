@@ -48,7 +48,7 @@ const Footer = () => {
 
               </ul>
               <p className=" sm:tw-text-xl tw-text-sm tw-text-white tw-pt-6 tw-text-center">
-              Apesrun Address : <span style={{ color:"#F0C238" }}>0x2FbdD419f6a00d0113BF0d8618BA22E425540d72</span>
+              Apesrun Address : <span style={{ color:"#F0C238" }}>0x099368A7e8A086F710B3bCF24FC979d921734b2C</span>
               </p>
 
             </div>

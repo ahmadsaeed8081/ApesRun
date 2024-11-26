@@ -1,10 +1,10 @@
 
-export const ebm_address="0x9092962cfdbF63147e0DBe03CA3e39c4BFC8324E"
-export const usdt_address="0x341343568948459e5b7017eDDb05110cfA3EF699";
-export const presale_address="0x80520c23EFa642A23eA5B6CadCcdfe640561F353";
-export const staking_address="0x71FA9dad311c6527937667fCa22570AC0561804d";
+export const ebm_address="0x099368A7e8A086F710B3bCF24FC979d921734b2C"
+export const usdt_address="0xc2132D05D31c914a87C6611C10748AEb04B58e8F";
+export const presale_address="0x3768F8c39Add11874C89fcC3ec3f12dFaA8DCeC2";
+export const staking_address="0x5c680AafA8fe4E2694670008a0754020FE3742ef";
 
-
+// 0xcF8E9337934B3648a84488c35DE7cf2c76F9d752
 export const staking_abi=[
 	{
 		"inputs": [],

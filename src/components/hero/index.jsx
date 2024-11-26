@@ -167,7 +167,7 @@ const Hero = (props) => {
         const tx = await writeContractAsync({
           abi: token_abi,
           address: usdt_address,
-          args: [presale_address, payAmount ? Number(payAmount) * 10 ** 18 : "0"],
+          args: [presale_address, payAmount ? Number(payAmount) * 10 ** 6 : "0"],
           functionName: "approve",
 
         }); 
@@ -282,7 +282,7 @@ const Hero = (props) => {
     } 
     else if(selectedCurrency=="USDT" )
     {
-      if (Number(props.USDTBalance) < Number(payAmount) * 10 ** 18) {
+      if (Number(props.USDTBalance)/10**6 < Number(payAmount)) {
         alert("You don't have enough USDT");
         return;
       }
@@ -491,7 +491,7 @@ Get APS <FaArrowRight color="#F0C238" />
                     <div className="  tw-gap-3 tw-justify-center  tw-flex tw-items-center tw-text-center tw-pt-4 tw-pb-2">
                       <p className=" tw-w-24 m-0  tw-bg-[#F0C238] tw-h-[2px] "></p>
                       <p className=" tw-uppercase tw-font-medium tw-font-poppins tw-m-0  sm:tw-text-lg tw-text-[10px] tw-text-white">
-                      {selectedCurrency==="POL"?'POL' :'USDT'} Balance = <span className=" tw-text-[#F0C238] tw-font-poppins">{selectedCurrency==="POL"? props.MATICBalance ? (Number(props.MATICBalance)/10**18).toFixed(3):"0" : props.USDTBalance ? (Number(props.USDTBalance)/10**18).toFixed(2):"0" }</span>
+                      {selectedCurrency==="POL"?'POL' :'USDT'} Balance = <span className=" tw-text-[#F0C238] tw-font-poppins">{selectedCurrency==="POL"? props.MATICBalance ? (Number(props.MATICBalance)/10**18).toFixed(3):"0" : props.USDTBalance ? (Number(props.USDTBalance)/10**6).toFixed(2):"0" }</span>
                       </p>
                       <p className=" tw-w-24 m-0  tw-bg-[#F0C238] tw-h-[2px] "></p>
 

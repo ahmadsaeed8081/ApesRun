@@ -41,7 +41,7 @@ const Staking = (props) => {
 
   const notify = () => toast("Transaction Successfull!");
 
-  const options = [{value:"0", title:"3 months", APR : "9%" }, {value:"1",title:"6 months", APR : "36%" }, {value:"2",title:"9 months", APR : "81%" }];
+  const options = [{value:"0", title:"3 months", APR : "9%" }, {value:"1",title:"6 months", APR : "21%" }, {value:"2",title:"9 months", APR : "36%" }, {value:"3",title:"12 months", APR : "54%" }];
 
 
   const [isOpen, setIsOpen] = useState(false);
@@ -457,7 +457,7 @@ useEffect(()=>{
                     <p className="tw-font-medium tw-text-white">
                       Write Amount:
                     </p>
-                    <p className="tw-text-white tw-text-sm">Balance : {props.EBMBalance>0?(Number(props.EBMBalance)/10**18).toFixed(2):0}  Tiks</p>
+                    <p className="tw-text-white tw-text-sm">Balance : {props.EBMBalance>0?(Number(props.EBMBalance)/10**18).toFixed(2):0}  APS</p>
                   </div>
                   <div
                     className="tw-relative tw-w-full tw-inline-block"
@@ -479,7 +479,7 @@ useEffect(()=>{
 
                       />
                       <div className="tw-flex tw-items-center tw-gap-2">
-                        <p className="tw-text-sm tw-m-0">Tiks</p>
+                        <p className="tw-text-sm tw-m-0">APS</p>
                         <button className=" text-white tw-bg-[#F0C238] tw-py-1.5 tw-px-1 tw-text-sm tw-rounded-md"
                         onClick={(e)=>setStakedAmount(props.EBMBalance>0?(Number(props.EBMBalance)/10**18):0)}
 

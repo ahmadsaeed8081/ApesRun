@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import VideoPlayer from "../videoPlayer";
 
-const VideoSlider = () => {
+const VideoSlider = ({src1}) => {
   const settings = {
     dots: true,
     infinite: true,
@@ -54,7 +54,7 @@ const VideoSlider = () => {
         {/* <Slider {...settings}> */}
           {/* {brands.map((brand, index) => ( */}
             <div className="tw-text-center tw-rounded-md tw-overflow-hidden">
-              <VideoPlayer src={require(`../../assets/images/video1.mp4`)} className="tw-rounded-md tw-mx-auto" />
+              <VideoPlayer src={src1} className="tw-rounded-md tw-mx-auto" />
             </div>
           {/* ))} */}
         {/* </Slider> */}

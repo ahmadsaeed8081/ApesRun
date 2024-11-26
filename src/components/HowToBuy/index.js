@@ -92,7 +92,7 @@ className=" tw-bg-[#0F0F0F] tw-pt-14 md:tw-p-4  "
     </div>
     <div className="tw-relative">
 
-      <VideoSlider />
+      <VideoSlider src1={"./video2.mp4"} />
 
       <p className="tw-font-zendots tw-text-[#F0C238] tw-underline tw-my-2 tw-text-center">
         View Step by Step
