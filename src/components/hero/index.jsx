@@ -560,7 +560,7 @@ Get APS <FaArrowRight color="#F0C238" />
                     </div>
                    
 
-                    {isDisconnected?
+                    {isDisconnected || address==null?
                     (
                       <div className=" tw-flex tw-border-b tw-border-[#F0C238] tw-gap-3 tw-py-4">
                       <Button
